@@ -1,12 +1,12 @@
 package com.example.bitamirshafiee.bookstoreskeleton
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 
-class RecyclerViewAdapter(private var list : MutableList<Int>) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
+class RecyclerViewAdapter(private var list : MutableList<Int>) : androidx.recyclerview.widget.RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, p1: Int): ViewHolder {
         val context = viewGroup.context
@@ -27,7 +27,7 @@ class RecyclerViewAdapter(private var list : MutableList<Int>) : RecyclerView.Ad
         holder.bind(item)
     }
 
-    class ViewHolder(v: View) : RecyclerView.ViewHolder(v){
+    class ViewHolder(v: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(v){
 
         private var view: View = v
         private var imageView : ImageView
